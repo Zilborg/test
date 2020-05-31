@@ -7,6 +7,7 @@ deploy:
   provider: heroku
   api_key: 1fc1ccfa-517c-4a9e-8d36-695216adfabd
   app: testflaskapp-123
+  run: "python app.py"
 
 
 script:
