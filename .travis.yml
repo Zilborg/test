@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.7"
+install:
+  - pip install -r requirements.txt
+deploy:
+  provider: heroku
+  api_key: 1fc1ccfa-517c-4a9e-8d36-695216adfabd
+  app: test-flask-app
+  run: "python app.py"
