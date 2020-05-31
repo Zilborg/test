@@ -10,4 +10,6 @@ deploy:
 
 
 script:
-  - pytest
+  - python app.py &
+  - sleep 5
+  - python app_test.py

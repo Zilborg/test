@@ -1,16 +1,20 @@
-from app import app
+import os
+import sys
+import unittest
+import requests
+from unittest import TestCase
 
 
-def func(x):
-    return x + 1
+import datetime_service as ds
 
 
-def test_answer():
-    assert func(3) == 4
+class TestDatetimeAPI(TestCase):
+
+    def test_test_api(self):
+
+        data = requests.get("http://0.0.0.0:5000/")
+        self.assertEqual(data.status_code, 200)
 
 
-def test_hello_world():
-    result = app.hello_world()
-    expected_result = 'Hello, World!'
-
-    assert expected_result == result
+if __name__ == '__main__':
+    unittest.main()
