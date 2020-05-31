@@ -5,9 +5,6 @@ import requests
 from unittest import TestCase
 
 
-import datetime_service as ds
-
-
 class TestDatetimeAPI(TestCase):
 
     def test_test_api(self):
